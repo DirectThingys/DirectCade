@@ -1,40 +1,94 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080808">
-    <meta name="description" content="DirectCade">
+    <meta name="description" content="DirectCade - Games for RichtPunt Campus Eeklo">
     <title>DirectCade</title>
     <link rel="icon" type="image/png" href="logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="topbar">
         <a class="brand" href="/" aria-label="DirectCade home">
-            <img class="brand-logo" src="logo.png" alt="DirectCade logo">
+            <img class="brand-logo" src="/logo.png" alt="DirectCade logo">
             <span class="brand-name">Direct<span class="brand-highlight">Cade</span></span>
         </a>
 
         <nav class="navigation" aria-label="Main navigation">
-            <button class="nav-button active" type="button">Home</button>
-            <button class="nav-button" type="button">Games</button>
-            <button class="nav-button" type="button">Categories</button>
+            <a class="nav-button active" href="#home">Home</a>
+            <a class="nav-button" href="#games">Games</a>
+            <a class="nav-button" href="#categories">Categories</a>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
+        <section class="welcome" id="home">
             <div class="status">
                 <span class="status-dot"></span>
                 Gemaakt Voor RichtPunt Campus Eeklo!
             </div>
 
             <h1>Welcome To <span>DirectCade!</span></h1>
+            <p class="welcome-description">
+                Your place to play.
+            </p>
+        </section>
+
+        <section class="games-section" id="games">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">THE COLLECTION</p>
+                    <h2>Popular <span>Games</span></h2>
+                </div>
+
+                <span class="game-count">1 GAME</span>
+            </div>
+
+            <div class="game-grid">
+                <a class="game-card" href="/games/drive-mad/">
+                    <div class="game-thumbnail drive-mad-thumbnail">
+                        <span class="game-tag">POPULAR</span>
+                        <div class="drive-mad-art">
+                            <span class="drive-mad-title">DRIVE<br>MAD</span>
+                            <span class="drive-mad-car">🏎️</span>
+                        </div>
+                        <span class="play-overlay">
+                            <span class="play-icon">▶</span>
+                        </span>
+                    </div>
+
+                    <div class="game-info">
+                        <div>
+                            <h3>Drive Mad</h3>
+                            <p>Driving · Physics</p>
+                        </div>
+                        <span class="game-arrow">↗</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="games-section categories-section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">FIND YOUR NEXT GAME</p>
+                    <h2>Game <span>Categories</span></h2>
+                </div>
+            </div>
+
+            <div class="category-list">
+                <span class="category-chip">🏎️ Racing</span>
+                <span class="category-chip">🎮 Casual</span>
+                <span class="category-chip">⚡ Arcade</span>
+            </div>
         </section>
     </main>
 
@@ -45,3 +99,4 @@
     </footer>
 </body>
 </html>
+```
